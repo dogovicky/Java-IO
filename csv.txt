@@ -1,0 +1,3 @@
+Name, Age, City
+John Smith, 25, Nairobi
+Jane Doe, 22, Kisumu
