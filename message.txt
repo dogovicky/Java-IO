@@ -1,0 +1,2 @@
+Hello from Java IO 
+Character strings handle text encoding automatically
