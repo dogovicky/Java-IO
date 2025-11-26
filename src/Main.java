@@ -1,5 +1,6 @@
 import buffered.BufferingIO;
 import buffered.Task;
+import fileIO.FileIOImpl;
 import streams.StreamAPI;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -19,7 +20,15 @@ public class Main {
         // bufferingIO.bufferingIOImpl();
 
         buffered.Task bufferedTask = new Task();
-        bufferedTask.task();
+        // bufferedTask.task();
+
+        // ============= File IO ==============
+
+        FileIOImpl fileIO = new FileIOImpl();
+        // fileIO.fileIOImpl();
+
+        fileIO.Task fileIOTask = new fileIO.Task();
+        fileIOTask.task();
 
     }
 }
