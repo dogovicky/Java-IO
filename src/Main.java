@@ -1,12 +1,15 @@
 import buffered.BufferingIO;
 import buffered.Task;
 import fileIO.FileIOImpl;
+import nio.NIO2;
 import streams.StreamAPI;
+
+import java.io.IOException;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         // ============= Streams Implementation ==============
         StreamAPI streamAPI = new StreamAPI();
@@ -28,7 +31,11 @@ public class Main {
         // fileIO.fileIOImpl();
 
         fileIO.Task fileIOTask = new fileIO.Task();
-        fileIOTask.task();
+        //fileIOTask.task();
+
+        // ============== NIO2 ===============
+        NIO2 nio2 = new NIO2();
+        nio2.nio2Impl();
 
     }
 }
