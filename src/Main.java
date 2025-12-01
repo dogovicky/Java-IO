@@ -3,6 +3,7 @@ import buffered.Task;
 import channels.FileChannelImpl;
 import channels.NIOChannelsBuffers;
 import fileIO.FileIOImpl;
+import networkingIO.NetworkingIO;
 import nio.NIO2;
 import nonBlockingIO.NIOSelectors;
 import nonBlockingIO.WebFluxSimulation;
@@ -60,6 +61,10 @@ public class Main {
 
         // ============= Serialization ===============
         SerializationImpl serialization = new SerializationImpl();
-        serialization.serializationImpl();
+        // serialization.serializationImpl();
+
+        // ============= Networking I/O ===============
+        NetworkingIO networkingIO = new NetworkingIO();
+        networkingIO.networkingIO();
     }
 }
