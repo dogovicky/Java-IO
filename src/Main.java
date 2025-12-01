@@ -4,6 +4,8 @@ import channels.FileChannelImpl;
 import channels.NIOChannelsBuffers;
 import fileIO.FileIOImpl;
 import nio.NIO2;
+import nonBlockingIO.NIOSelectors;
+import nonBlockingIO.WebFluxSimulation;
 import streams.StreamAPI;
 
 import java.io.IOException;
@@ -11,7 +13,7 @@ import java.io.IOException;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
         // ============= Streams Implementation ==============
         StreamAPI streamAPI = new StreamAPI();
@@ -46,6 +48,13 @@ public class Main {
 
         // File Channels
         FileChannelImpl fileChannel = new FileChannelImpl();
-        fileChannel.fileChannelImpl();
+        // fileChannel.fileChannelImpl();
+
+        // NIO Selectors (Non Blocking)
+        NIOSelectors nioSelectors = new NIOSelectors();
+        // nioSelectors.nioSelectorsImpl();
+
+        WebFluxSimulation fluxSimulation = new WebFluxSimulation();
+        fluxSimulation.webFluxSimulation();
     }
 }
