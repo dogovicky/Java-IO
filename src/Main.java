@@ -1,5 +1,6 @@
 import buffered.BufferingIO;
 import buffered.Task;
+import channels.FileChannelImpl;
 import channels.NIOChannelsBuffers;
 import fileIO.FileIOImpl;
 import nio.NIO2;
@@ -41,6 +42,10 @@ public class Main {
 
         // ============== NIO Channels and Buffers ================
         NIOChannelsBuffers bufferChannels = new NIOChannelsBuffers();
-        bufferChannels.nioChannelsAndBuffers();
+        // bufferChannels.nioChannelsAndBuffers();
+
+        // File Channels
+        FileChannelImpl fileChannel = new FileChannelImpl();
+        fileChannel.fileChannelImpl();
     }
 }
