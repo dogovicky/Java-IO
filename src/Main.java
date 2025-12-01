@@ -6,6 +6,7 @@ import fileIO.FileIOImpl;
 import nio.NIO2;
 import nonBlockingIO.NIOSelectors;
 import nonBlockingIO.WebFluxSimulation;
+import serialization.SerializationImpl;
 import streams.StreamAPI;
 
 import java.io.IOException;
@@ -55,6 +56,10 @@ public class Main {
         // nioSelectors.nioSelectorsImpl();
 
         WebFluxSimulation fluxSimulation = new WebFluxSimulation();
-        fluxSimulation.webFluxSimulation();
+        // fluxSimulation.webFluxSimulation();
+
+        // ============= Serialization ===============
+        SerializationImpl serialization = new SerializationImpl();
+        serialization.serializationImpl();
     }
 }
